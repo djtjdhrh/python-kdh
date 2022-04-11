@@ -36,6 +36,7 @@ while a>0:
 a=int(input("숫자입력:"))
 n=1
 
+숫자판 가로버전
 #n이 a의 제곱보다 작은 동안 반복
 #n이 a의 제고봅다 작다면 반복
 while n <= a**2:
@@ -45,14 +46,16 @@ while n <= a**2:
           
           n+=1 #n은 1씩 증가
 
-
+숫자판 세로버전
 a=int(input("숫자입력:"))
-n=1
-while n < a**2:
-          print(f'{n}',end='')
-          n+=a
-          while n+1 < a**2:
-                    print(f'{n}',end='')
-                    n+=a
+b=0
+c=1
+while c <= a:
+      while b <a :
+          print(f'{c+a*b}',end='')
+          b+=1
+      print()
+      c+=1
+      b=0
 
 
