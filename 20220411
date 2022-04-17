@@ -1,4 +1,16 @@
-
+'''
+#list안에서 홀수 짝수 갯수 알려주는것
+a= [1,2,3,4,5,6,7,8,9]
+b =0
+c =0
+for a in a:
+    if a % 2 == 0:
+        b+=1
+    else:
+        c+=1
+print(f'리스트안에 짝수는 {b}개, 홀수는 {c}개')
+'''    
+    
 
 '''
 전체 : Hello
@@ -18,7 +30,7 @@ for x in "Hello":
           
  #문제
 '''
-자신의 영뮨 이름을 입력받아
+자신의 영문 이름을 입력받아
 아래와 같이 출력되도록 프로그램
 해봅시다.
 입력 : HongGilDong
@@ -95,7 +107,14 @@ for outN in range(10):
 1X3=3 / 2X3=6 / 3X3=9 /
 1X4=4 / 2X4=8 / 3X4=12 /
 '''
-
+'''
+for a in range(1,5):
+    for b in range(1,4):
+            print(f'{b}x{a}={a*b}/', end='')
+    if b % 3 ==0 :
+        print()
+'''     
+        
 a = int(input("숫자:"))
 n = 1
 m = 0
