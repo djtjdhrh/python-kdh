@@ -60,3 +60,43 @@ for x in range(1,a+1):
                     if b%x==0:
                               c=x
 print(c)
+
+
+
+'''
+# 소수 판독기(소수:1과 본인이 약수인 수)
+a = int(input("숫자:"))
+for x in range(a,0,-1):
+          if a % x ==0:
+                    if x % a==0:
+                              if x % 1==0:
+                                        print(f'{a}는 소수이다')
+                              else:
+                                        print(a,'소수가 아니다')
+
+'''
+'''
+a = int(input("숫자"))
+b = 1
+
+while b <= a:
+          if a % b ==0:
+                    if b % a==0:
+                    print(a,'는 소수이다')
+                    else:
+                    print(a,'는 소수가 아니다')
+          b+=1
+
+'''
+
+#234532를 455로 나누었을때
+#나머지를 구하시오
+#단, %를 사용하지 않습니다.
+
+a = 234532
+b = 455
+c = a/b
+if c > 0:
+          a-b
+          c-=1
+print(c)
