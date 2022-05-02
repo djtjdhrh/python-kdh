@@ -9,3 +9,40 @@ while a>=m:
           a=a-m
           
 print(f'남은 사과는 {a}개이고, 사람당{b}개 입니다.')
+
+
+===슬라이드게임
+board=[[1,2,5],
+       [3,0,6],
+       [8,7,4]]
+#화면에 보드 상태 보여주기
+print(board[0])
+print(board[1])
+print(board[2])
+
+#빈칸지정
+r=1
+c=1
+key=input('wasd중에 하나입력:')
+#만약 key값이 d와 같다면
+#board[2][2]와 board[2][1]을 서로 바꾸기
+if key == 'd':
+          board[r][c+1],board[r][c]=board[r][c],board[r][c+1]
+          r=r
+          c=c-1
+elif key == 'a':
+          board[r][c-1],board[r][c]=board[r][c],board[r][c-1]
+          r=r
+          c=c-1
+elif key == 'w':
+          board[r-1][c],board[r][c]=board[r][c],board[r-1][c]
+          r=r-1
+          c=c
+elif key == 's':
+          board[r+1][c],board[r][c]=board[r][c],board[r+1][c]
+          r=r+1
+          c=c
+print(board[0])
+print(board[1])
+print(board[2])
+
