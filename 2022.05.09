@@ -78,7 +78,7 @@ random.shuffle(a) # a리스트 섞기
 a = a[0:3] #인덱스 0,1,2번만 리스트로 표시
 s,b,o=0,0,0
 
-n1,n2,n3=input('숫자 3개 입력(띄어쓰기 구분)').split('')
+n1,n2,n3=input('숫자 3개 입력(띄어쓰기 구분)').split(' ')
 n1 = int(n1)
 n2= int(n2)
 n3 = int(n3)
