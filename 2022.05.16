@@ -1,0 +1,28 @@
+숫자야구 정답
+import random
+st=0
+c=0
+a=[]
+while len(a)<3:
+          r=str(random.randint(0,9))
+          if not(r in a):
+                    a.append(r)
+while st<3:
+          st=0
+          ba=0
+          o=0
+          r=str(input("숫자3개입력:"))
+          for i in range(0,3):
+                    for x in range(0,3):
+                              if r[i]==a[x] and i==x:
+                                        st+=1
+                              elif r[i]==a[x] and i!=x:
+                                        ba+=1
+          o=3-(st+ba)
+          print(f'ㅅ트라이크{st},볼{ba},아웃{o}')
+          c+=1
+print('끝 시도횟수:',c)
+                              
+
+
+
