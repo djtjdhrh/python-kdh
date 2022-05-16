@@ -91,25 +91,3 @@ if n1 in a:
                     b+=1
 else:
           o+=1
-if n2 in a:
-          if n1 == a[0]:
-                    s+=1
-          else:
-                    b+=1
-else:
-          o+=1
-if n3 in a:
-          if n1 == a[0]:
-                    s+=1
-          else:
-                    b+=1
-else:
-          o+=1
-print(f'스트라이크{s},볼{b},아웃{o}')
-                    
-                    
-                    
-                    
-                    
-                    
- 
