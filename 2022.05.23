@@ -1,0 +1,31 @@
+가위바위보
+4선승(승패구별)
+
+import random
+c=0
+w=0
+d=0
+l=0
+
+while w<4 and l<4:
+          a=['가위','바위','보']
+          random.shuffle(a)
+          a=a[0]
+          n=input('가위바위보:')
+          if n==a:
+                    d+=1
+          elif a=='가위' and n=='바위':
+                    w+=1
+          elif a=='바위' and n=='보':
+                    w+=1
+          elif a=='보' and n=='가위':
+                    w+=1
+          else:
+                    l+=1
+          c+=1
+          print(f'{c}전{w}승{d}무{l}패')
+if w>l:
+          print('플레이어 승')
+else:
+          print('com 승')
+==============================================
