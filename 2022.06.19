@@ -1,0 +1,11 @@
+import random
+
+while True:
+    n= random.randint(0,200)
+    a= n+1
+    b= n+2
+    z=n+a+b
+
+    if z == 81:
+        print(n,a,b,'=81ㅆㄱㄴ')
+        break
